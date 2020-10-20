@@ -1,0 +1,22 @@
+{{define "title"}}Login Page{{end}}
+{{define "style"}}<link rel="stylesheet" href="/UI/styles/login.css">{{end}}
+{{define "body"}}
+    <h1>This is the login page</h1>
+        <form onsubmit=" return submitForm(event)" method="GET">
+            <label for="email">
+                Email
+            <input type="email" id="email" placeholder="Input email">
+            </label><br>
+            <label for="password">
+                Password
+            <input type="password" id="password" placeholder="input password">
+            </label><br>
+            <label for="">
+                <p></p>
+                <input type="submit" value="SUBMIT">
+            </label>
+        </form>
+{{end}}
+{{define "script"}}
+    <script src="/UI/script/login.js"></script>
+{{end}}

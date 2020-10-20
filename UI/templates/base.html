@@ -1,0 +1,23 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{template "title"}}</title>
+    <link rel="stylesheet" href="/UI/styles/base.css">
+    {{template "style"}}
+</head>
+<body>
+    <nav>
+        <a href="/index.html" class="nav-item padded-left padded-right">Home</a>
+        <a href="/auth.html" class="nav-item padded-right padded-left">Credentials</a>
+        <a href="/login.html" class="nav-item padded-right padded-left">Login</a>
+    </nav>
+    <main>
+        {{template "body"}}
+    </main>
+    <footer>&copy Bazenga Inc.</footer>
+{{template "script"}}
+</body>
+</html>
+{{end}}

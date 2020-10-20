@@ -1,0 +1,44 @@
+{{define "title"}}Login Page{{end}}
+{{define "style"}}<link rel="stylesheet" href="/UI/styles/auth.css">{{end}}
+{{define "body"}}
+    <h1>Credentials</h1>
+{{/*    <form action="/api/auth/create_client/" method="post">*/}}
+        <form onsubmit="return submitForm(event)">
+        <label for="clientName">
+            Client Name
+            <input type="text" id="clientName" name="clientName" required placeholder="Enter client-name">
+        </label><br>
+        <label for="clientURI">
+            Client Uri
+            <input type="text" id="clientURI" name="clientURI" required placeholder="Enter client-uri">
+        </label><br>
+        <label for="grantType">
+            Grant type
+            <input type="text" id="grantType" name="grantType" required placeholder="Specify grant type">
+        </label><br>
+        <label for="redirectURI">
+            Redirect Uri
+            <input type="text" id="redirectURI" name="redirectURI" required placeholder="Enter redirect uri">
+        </label><br>
+        <label for="responseType">
+            Response type
+            <input type="text" id="responseType" name="responseType" required placeholder="Enter response type">
+        </label><br>
+        <label for="scope">
+            Scope
+            <input type="text" id="scope" name="scope" required placeholder="Enter the scope">
+        </label><br>
+        <label for="authMethod">
+            Auth Method
+            <input type="text" id="authMethod" name="authMethod" required placeholder="Enter the auth method">
+        </label><br>
+        <label for="">
+            <p></p>
+            <input type="submit" value="submit">
+        </label>
+
+    </form>
+{{end}}
+{{define "script"}}
+    <script src="/UI/script/auth.js"></script>
+{{end}}
